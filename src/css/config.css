@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* For most of the sections */
+    .wrapper{
+        @apply w-[90%] max-w-screen-lg mx-auto mb-10 z-40 scroll-m-6;
+    }
+    /* The hover for nav links */
+    .navlink--hover{
+        @apply relative before:content-[''] before:h-[2px] before:absolute before:bg-highlight before:w-full before:bottom-0 before:scale-x-0 before:origin-center hover:before:scale-x-100 hover:text-highlight transition-colors before:transition-transform before:duration-500 duration-300
+    }
+    /* Social Medias Buttons */
+    .social-medias{
+        @apply size-8 bg-2nd-background-color rounded-md flex items-center justify-center text-2xl p-1 hover:text-white/70 hover:bg-highlight transition-colors duration-200;
+    }
+    /* Sections Titles */
+    .title{
+        @apply uppercase font-extrabold text-2xl text-highlight tracking-wide before:content-[''] before:w-[6px] before:h-7 before:bg-highlight before:relative before:block before:mr-1 flex items-center mb-5 md:text-3xl md:before:w-[7px] md:before:mr-2;
+    }
+    /* Info blocks */
+    .info-block{
+        @apply bg-2nd-background-color p-5 rounded-xl text-pretty;
+    }
+    .container-grid{
+        @apply grid gap-5 place-content-start md:grid-flow-col;
+    }
+    /* for projects cards container/article/div */
+    .project-card{
+        @apply bg-2nd-background-color overflow-hidden rounded-xl min-h-96 max-w-full flex flex-col shadow-sm hover:shadow-black/20 hover:shadow-lg hover:-translate-y-4 duration-300;
+    }
+    /* for projects cards first div most known as header */
+    .project-card__header{
+        @apply relative w-full h-48 overflow-hidden cursor-pointer;
+    }
+    /* for projects cards first div on header that contains hover div */
+    .project-card__header--hover__container{
+        @apply absolute inset-0 bg-highlight/90 flex translate-y-full justify-center items-center group-hover:translate-y-0 transition-all duration-300;
+    }
+    .project-card__header--hover__container__title{
+        @apply uppercase font-extrabold tracking-wider text-4xl md:text-5xl text-white shadow-black drop-shadow-lg text-center;
+    }
+    /* icon on projects card's header */
+    .project-card__header__icon{
+        @apply absolute top-1 right-1 size-5;
+    }
+    /* project card's header image */
+    .project-card__header__img{
+        @apply object-cover w-full h-full;
+    }
+    /* Second div in projects cards most known as body */
+    .project-card__body{
+        @apply p-4 flex flex-col gap-2 flex-1 place-content-start;
+    }
+    .project-card__body__title{
+        @apply uppercase font-bold tracking-wider text-highlight text-lg leading-4;
+    }
+    .project-card__body__description{
+        @apply text-sm font-light tracking-widest leading-4 text-pretty;
+    }
+    /* The technologies icons  */
+    .project-card__body__brands{
+        @apply flex justify-end gap-2 mt-auto;
+    }
+    /* input groups that have a label and the input */
+    .input-group{
+        @apply flex items-center bg-2nd-background-color p-3 rounded-xl border-transparent border-2 focus-within:border-highlight transition-all duration-200;
+    }
+    /* input styles */
+    .input{
+        @apply bg-transparent pl-2 w-full flex-1 placeholder:text-white/40 placeholder:font-semibold focus:outline-none tracking-wider;
+    }
+    /* style of navbar when scroll on desktop */
+    .at-top{
+        @apply sm:h-16 sm:bg-[#121212dd] sm:m-0 sm:backdrop-blur-lg;
+    }
+}

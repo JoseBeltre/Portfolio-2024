@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This portfolio belongs to José Beltre FrontEnd Web Developer">
+    <meta name="author" content="José Beltre" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Importing Poppins from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Importing FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/6586490a67.js" crossorigin="anonymous"></script>
+
+    <title>José Beltre | Frontend Web Developer</title>
+</head>
+<body class="font-poppins bg-background-color relative overflow-x-hidden max-w-screen text-white/40">
+    <!-- Header and Nav -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="wrapper h-12 flex justify-end items-center sm:justify-center sm:w-full sm:max-w-full transition-colors duration-300">
+            <input type="checkbox" name="menu" id="menu" title="Navigation Menu" class="peer hidden">
+            <label for="menu" class="bg-open-menu bg-cover peer-checked:bg-close-menu size-8 z-50 transition-all sm:hidden"></label>
+            <!-- Menu -->
+            <div class="fixed inset-0 bg-[#121212f5] text-details-gray text-center uppercase font-bold tracking-widest flex justify-center items-start pt-28 translate-x-full peer-checked:translate-x-0 transition-all z-40 sm:translate-x-0 sm:pt-0 sm:static sm:bg-transparent">
+                <ul class="grid gap-4 sm:grid-flow-col sm:gap-10 md:gap-14">
+                    <!-- Nav Links -->
+                    <li><a href="#home" class="navlink--hover">home</a></li>
+                    <li><a href="#about" class="navlink--hover">about</a></li>
+                    <li><a href="#projects" class="navlink--hover">projects</a></li>
+                    <li><a href="#contact-me" class="navlink--hover">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Section Home/Hero -->
+        <section id="home" class="wrapper pt-20 grid place-content-start items-center justify-center sm:pt-18 md:grid-flow-col md:place-content-center">
+            <!-- Spots -->
+            <img src="./assets/svgs/1-dark.svg" alt="svg spot" class="z-40 absolute top-0 left-0 w-20 md:w-32">
+            <img src="./assets/svgs/1-light.svg" alt="svg spot" class="z-40 absolute top-0 left-0 w-14 md:w-24">
+            <img src="./assets/svgs/2-dark.svg" alt="svg spot" class="z-40 absolute top-2 right-0 w-20 md:w-32 md:top-0">
+            <img src="./assets/svgs/2-light.svg" alt="svg spot" class="z-40 fixed sm:absolute top-0 right-0 w-20 md:w-44">
+            <img src="./assets/svgs/3-dark.svg" alt="svg spot" class="absolute bottom-0 right-0 w-[100px] md:w-44 z-[-2]">
+            <img src="./assets/svgs/3-light.svg" alt="svg spot" class=" absolute bottom-2 right-0 w-16 md:w-32 z-[-2]">
+            <!-- Image of Me -->
+            <div class="mx-auto md:order-1">
+                <img src="./assets/imgs/me.png" alt="José Beltre" class="animate-wiggle">
+            </div>
+            <!-- Titles -->
+            <div class="grid gap-1 sm:gap-2">
+                <div class="text-center uppercase tracking-wider font-bold md:text-end">
+                  <h4 class="sm:text-2xl">What's up?</h4>
+                  <h1 class="font-extrabold text-3xl leading-6 sm:text-6xl">I'm <span class="text-highlight">José Beltre</span></h1>
+                  <h4 class="leading-4 pt-1 sm:text-2xl sm:pt-0">a <span class="text-highlight">Frontend web developer</span></h4>  
+                </div>
+                <!-- Social Medias Links -->
+                <div class="flex justify-center items-center flex-col gap-2 sm:flex-row sm:gap-10 md:justify-end">
+                    <ul class="flex gap-2 ">
+                        <li>
+                            <a href="https://www.instagram.com/art_loque" title="Instagram" class="social-medias">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="GitHub" class="social-medias">
+                                <i class="fa-brands fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Download Curriculum Button -->
+                    <a href="./" title="Download my Curriculum Vitae" class="uppercase font-semibold text-xs text-white/80 bg-highlight tracking-wider px-3 py-2 rounded-md hover:bg-2nd-background-color hover:text-highlight transition-colors duration-200">download cv</a>
+                </div>
+            </div>
+        </section>
+        <!-- Section About -->
+        <section id="about" class="wrapper">
+            <h2 class="title">About me</h2>
+            <div class="container-grid">
+                <article class="info-block">
+                    <p class="tracking-wide ">
+                        My name is <span class="text-highlight font-bold">José Luis</span> and I’m a <span class="text-highlight font-bold">Front-End Web Developer</span>. I love to create simple but beautiful user interfaces, that’s why I’m always trying to learn more and improve my skills. This is my Portfolio here you’ll be able to see what I’m capable to create using my skills.
+                    </p>
+                </article>
+                <article class="overflow-hidden rounded-xl md:max-w-72 ">
+                    <img src="./assets/imgs/me-animated.png" alt="" class="max-w-full">
+                </article>
+            </div>
+        </section>
+        <!-- Section Projects -->
+        <section id="projects" class="wrapper">
+            <h2 class="title">projects</h2>
+            <!-- Grid Container for Projects -->
+            <div class="container-grid grid-flow-row sm:grid-cols-2 md:grid-cols-3">
+                <!-- Projects Cards -->
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/baifud.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">Baifud app</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                            <img src="./assets/brands/flutterflow.svg" class="size-6" alt="PHP">
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/admindashboard.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">Admin dashboard for baicompiurers</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                            <img src="./assets/brands/flutterflow.svg" class="size-6" alt="PHP">
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/login-signup.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">Login & signup</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                            <img src="./assets/brands/Php.dark.svg" class="size-6" alt="PHP">
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/mokepon.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">mokepon</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/register.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">register</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card group  ">
+                    <a href="https://www.jose-web.com">
+                        <div class="project-card__header">
+                            <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
+                            <img src="./assets/icons/link.svg" alt="link to project" class="project-card__header__icon">
+                            <img src="./assets/imgs/projects/calculator.jpg" alt="project image" class="project-card__header__img">
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__body__title">js calculator</h3>
+                        <p class="project-card__body__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis architecto deserunt.</p>
+                        <div class="project-card__body__brands">
+                            <img src="./assets/brands/html5.svg" class="size-6" alt="HTML5">
+                            <img src="./assets/brands/css.svg" class="size-6" alt="CSS3">
+                            <img src="./assets/brands/javascript.svg" class="size-6" alt="JavaScript">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Section Contact Me -->
+        <section id="contact-me" class="wrapper">
+            <h2 class="title">Contact me</h2>
+            <!-- Form -->
+            <form method="post" action="" class="grid gap-3 md:grid-cols-2">
+                <!-- Name input -->
+                <div class="input-group">
+                    <label for="name" class="">
+                        <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input id="name" name="name" type="text" placeholder="YOUR NAME" class="input">
+                </div>
+                <!-- Email Input -->
+                <div class="input-group">
+                    <label for="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="YOUR EMAIL" class="input">
+                </div>
+                <!-- Subject Input -->
+                <div class="input-group md:col-span-2">
+                    <label for="subject">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </label>
+                    <input type="text" name="subject" id="subject" placeholder="THE SUBJECT" class="input">
+                </div>
+                <!-- Message Input/Textarea -->
+                <textarea name="message" id="message" min="20" cols="30" rows="10" placeholder="WRITE A MESSAGE :)" class="input input-group  bg-2nd-background-color md:col-span-2"></textarea>
+                <!-- Send Email Button -->
+                <button type="submit" class="bg-highlight rounded-xl p-3 uppercase tracking-wider font-bold text-white text-xl hover:bg-2nd-background-color hover:text-highlight transition-colors duration-200  md:col-span-2">SEND email <i class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="wrapper mb-0 ">
+        <div class="info-block rounded-b-none text-center tracking-wider">
+            <p>Could you guess which <span class="text-highlight font-semibold ">color</span> is my favorite?</p>
+        </div>
+    </footer>
+    <!-- Some Scripts -->
+    <script>
+        //Just variables
+        const navbar = document.querySelector('nav');
+        const menuCheckbox = document.querySelector('nav input');
+        const links = document.querySelectorAll('nav div ul li a');
+        //To style de navbar when users scroll down on desktop
+        window.addEventListener('scroll', () => {
+             navbar.classList.toggle('at-top', window.scrollY > 0 && window.innerWidth > 640);
+        })
+        //To close navbar each time users click on a link on mobile devices
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 640) {
+                    menuCheckbox.checked = false;
+                }
+            })
+        });
+        //To avoid problems with vh on mobile
+        const setHeightHome = () => {
+            document.getElementById("home").style.height = window.innerHeight + "px";
+        }
+        setHeightHome();
+    </script>
+</body>
+</html>
