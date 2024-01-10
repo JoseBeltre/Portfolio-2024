@@ -36,7 +36,7 @@
     <!-- Main -->
     <main>
         <!-- Section Home/Hero -->
-        <section id="home" class="wrapper pt-20 grid place-content-start items-center justify-center sm:pt-18 md:grid-flow-col md:place-content-center">
+        <section id="home" class="wrapper pt-20 grid place-content-start items-center justify-center sm:pt-18 md:grid-flow-col md:place-content-center sm:min-h-screen">
             <!-- Spots -->
             <img src="./assets/svgs/1-dark.svg" alt="svg spot" class="z-40 absolute top-0 left-0 w-20 md:w-32">
             <img src="./assets/svgs/1-light.svg" alt="svg spot" class="z-40 absolute top-0 left-0 w-14 md:w-24">
@@ -51,26 +51,28 @@
             <!-- Titles -->
             <div class="grid gap-1 sm:gap-2">
                 <div class="text-center uppercase tracking-wider font-bold md:text-end">
-                  <h4 class="sm:text-2xl">What's up?</h4>
-                  <h1 class="font-extrabold text-3xl leading-6 sm:text-6xl">I'm <span class="text-highlight">José Beltre</span></h1>
-                  <h4 class="leading-4 pt-1 sm:text-2xl sm:pt-0">a <span class="text-highlight">Frontend web developer</span></h4>  
+                  <h4 class="sm:text-2xl to-animate">What's up?</h4>
+                  <h1 class="font-extrabold text-3xl leading-6 sm:text-6xl to-animate delay-100">I'm <span class="text-highlight">José Beltre</span></h1>
+                  <h4 class="leading-4 pt-1 sm:text-2xl sm:pt-0 to-animate delay-150">a <span class="text-highlight">Frontend web developer</span></h4>  
                 </div>
                 <!-- Social Medias Links -->
                 <div class="flex justify-center items-center flex-col gap-2 sm:flex-row sm:gap-10 md:justify-end">
                     <ul class="flex gap-2 ">
-                        <li>
+                        <li class="to-animate delay-200">
                             <a href="https://www.instagram.com/art_loque" title="Instagram" class="social-medias">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="to-animate delay-[250ms]">
                             <a href="" title="GitHub" class="social-medias">
                                 <i class="fa-brands fa-instagram "></i>
                             </a>
                         </li>
                     </ul>
                     <!-- Download Curriculum Button -->
-                    <a href="./" title="Download my Curriculum Vitae" class="uppercase font-semibold text-xs text-white/80 bg-highlight tracking-wider px-3 py-2 rounded-md hover:bg-2nd-background-color hover:text-highlight transition-colors duration-200">download cv</a>
+                    <div class="to-animate delay-[350ms]">
+                        <a href="./" title="Download my Curriculum Vitae" class="uppercase font-semibold text-xs text-white/80 bg-highlight tracking-wider px-3 py-2 rounded-md hover:bg-2nd-background-color hover:text-highlight duration-200 to-animate transition-all">download cv</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,13 +80,13 @@
         <section id="about" class="wrapper">
             <h2 class="title">About me</h2>
             <div class="container-grid">
-                <article class="info-block">
+                <article class="info-block to-animate">
                     <p class="tracking-wide ">
                         My name is <span class="text-highlight font-bold">José Luis</span> and I’m a <span class="text-highlight font-bold">Front-End Web Developer</span>. I love to create simple but beautiful user interfaces, that’s why I’m always trying to learn more and improve my skills. This is my Portfolio here you’ll be able to see what I’m capable to create using my skills.
                     </p>
                 </article>
-                <article class="overflow-hidden rounded-xl md:max-w-72 ">
-                    <img src="./assets/imgs/me-animated.png" alt="" class="max-w-full">
+                <article class="overflow-hidden rounded-xl md:max-w-72 to-animate sm:delay-200">
+                    <img src="./assets/imgs/me-animated.png" alt="Draw of me" class="max-w-full rounded-xl to-animate">
                 </article>
             </div>
         </section>
@@ -94,7 +96,7 @@
             <!-- Grid Container for Projects -->
             <div class="container-grid grid-flow-row sm:grid-cols-2 md:grid-cols-3">
                 <!-- Projects Cards -->
-                <article class="project-card group  ">
+                <article class="project-card group to-animate ">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -113,7 +115,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card group  ">
+                <article class="project-card group to-animate sm:delay-100  ">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -132,7 +134,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card group  ">
+                <article class="project-card group to-animate sm:delay-200  ">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -151,7 +153,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card group  ">
+                <article class="project-card group to-animate  ">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -169,7 +171,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card group  ">
+                <article class="project-card group to-animate  sm:delay-100">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -187,7 +189,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card group  ">
+                <article class="project-card group to-animate sm:delay-200  ">
                     <a href="https://www.jose-web.com">
                         <div class="project-card__header">
                             <div class="project-card__header--hover__container"><h2 class="project-card__header--hover__container__title">go to site</h2></div>
@@ -213,62 +215,55 @@
             <!-- Form -->
             <form method="post" action="" class="grid gap-3 md:grid-cols-2">
                 <!-- Name input -->
-                <div class="input-group">
-                    <label for="name" class="">
-                        <i class="fa-solid fa-user"></i>
-                    </label>
-                    <input id="name" name="name" type="text" placeholder="YOUR NAME" class="input">
+                <div class=" to-animate sm:delay-0">
+                    <div class="input-group">
+                        <span for="name" class="">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input id="name" name="name" type="text" placeholder="YOUR NAME" class="input">
+                    </div>
                 </div>
                 <!-- Email Input -->
-                <div class="input-group">
-                    <label for="email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="YOUR EMAIL" class="input">
+                <div class=" to-animate sm:delay-100">
+                    <div class="input-group">
+                        <span for="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" name="email" id="email" placeholder="YOUR EMAIL" class="input">
+                    </div>
                 </div>
                 <!-- Subject Input -->
-                <div class="input-group md:col-span-2">
-                    <label for="subject">
-                        <i class="fa-solid fa-envelope-open-text"></i>
-                    </label>
-                    <input type="text" name="subject" id="subject" placeholder="THE SUBJECT" class="input">
+                <div class=" to-animate sm:delay-200 md:col-span-2">
+                    <div class="input-group">
+                        <span for="subject">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </span>
+                        <input type="text" name="subject" id="subject" placeholder="THE SUBJECT" class="input">
+                    </div>
                 </div>
                 <!-- Message Input/Textarea -->
-                <textarea name="message" id="message" min="20" cols="30" rows="10" placeholder="WRITE A MESSAGE :)" class="input input-group  bg-2nd-background-color md:col-span-2"></textarea>
+                <div class="to-animate sm:delay-300  md:col-span-2">
+                    <div class="input-group ">
+                        <textarea name="message" id="message" min="20" cols="30" rows="10" placeholder="WRITE A MESSAGE :)" class="input "></textarea>
+                    </div>
+                </div>
                 <!-- Send Email Button -->
-                <button type="submit" class="bg-highlight rounded-xl p-3 uppercase tracking-wider font-bold text-white text-xl hover:bg-2nd-background-color hover:text-highlight transition-colors duration-200  md:col-span-2">SEND email <i class="fa-regular fa-paper-plane"></i></button>
+                <div class="to-animate sm:delay-300 md:col-span-2">
+                    <button type="submit" class="bg-highlight rounded-xl p-3 uppercase tracking-wider font-bold text-white text-xl hover:bg-2nd-background-color hover:text-highlight transition-colors duration-200 w-full">SEND email <i class="fa-regular fa-paper-plane"></i></button>
+                </div>
             </form>
         </section>
     </main>
     <!-- Footer -->
-    <footer class="wrapper mb-0 ">
-        <div class="info-block rounded-b-none text-center tracking-wider">
+    <footer class="wrapper mb-0">
+        <div class="info-block rounded-b-none text-center tracking-wider ">
             <p>Could you guess which <span class="text-highlight font-semibold ">color</span> is my favorite?</p>
         </div>
     </footer>
     <!-- Some Scripts -->
     <script>
-        //Just variables
-        const navbar = document.querySelector('nav');
-        const menuCheckbox = document.querySelector('nav input');
-        const links = document.querySelectorAll('nav div ul li a');
-        //To style de navbar when users scroll down on desktop
-        window.addEventListener('scroll', () => {
-             navbar.classList.toggle('at-top', window.scrollY > 0 && window.innerWidth > 640);
-        })
-        //To close navbar each time users click on a link on mobile devices
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 640) {
-                    menuCheckbox.checked = false;
-                }
-            })
-        });
-        //To avoid problems with vh on mobile
-        const setHeightHome = () => {
-            document.getElementById("home").style.height = window.innerHeight + "px";
-        }
-        setHeightHome();
+        
     </script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

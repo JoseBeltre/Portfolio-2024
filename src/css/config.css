@@ -5,7 +5,7 @@
 @layer components{
     /* For most of the sections */
     .wrapper{
-        @apply w-[90%] max-w-screen-lg mx-auto mb-10 z-40 scroll-m-6;
+        @apply w-[90%] max-w-screen-lg mx-auto mb-10 z-40 md:scroll-m-12;
     }
     /* The hover for nav links */
     .navlink--hover{
@@ -36,7 +36,7 @@
     }
     /* for projects cards first div on header that contains hover div */
     .project-card__header--hover__container{
-        @apply absolute inset-0 bg-highlight/90 flex translate-y-full justify-center items-center group-hover:translate-y-0 transition-all duration-300;
+        @apply absolute inset-0 bg-highlight/90 flex translate-y-full justify-center items-center group-hover:translate-y-0 motion-safe:transition-all motion-safe:duration-300;
     }
     .project-card__header--hover__container__title{
         @apply uppercase font-extrabold tracking-wider text-4xl md:text-5xl text-white shadow-black drop-shadow-lg text-center;
@@ -74,5 +74,11 @@
     /* style of navbar when scroll on desktop */
     .at-top{
         @apply sm:h-16 sm:bg-[#121212dd] sm:m-0 sm:backdrop-blur-lg;
+    }
+    .to-animate{
+        @apply translate-y-5 opacity-0 transition-all duration-500;
+    }
+    .animate{
+        @apply translate-y-0 opacity-100 ; 
     }
 }
