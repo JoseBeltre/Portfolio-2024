@@ -73,7 +73,7 @@
     }
     /* style of navbar when scroll on desktop */
     .at-top{
-        @apply sm:h-16 sm:bg-[#121212dd] sm:m-0 sm:backdrop-blur-lg;
+        @apply sm:h-16 sm:bg-[#121212dd] sm:m-0 sm:backdrop-blur-md;
     }
     .to-animate{
         @apply translate-y-5 opacity-0 transition-all duration-500;

@@ -1,0 +1,12 @@
+{
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.cursorStyle": "line",
+    "editor.cursorSurroundingLines": 0,
+    "workbench.activityBar.location": "side",
+    "workbench.colorCustomizations": {
+
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right"
+}
