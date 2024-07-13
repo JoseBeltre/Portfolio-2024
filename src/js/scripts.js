@@ -9,6 +9,7 @@ const projectsContainer = document.querySelector('#projects-container')
 
 //Adding projects using the "Project" class
 const  projectsArray = [
+    new Project('HANGMAN', 'The classic Hangman Game but online, it uses Greenborn Random Word Generator API to get the word that is gonna be guessed.', 'hangman.jpg', './projects/elahorcado', ['HTML5', 'TailwindCSS','JavaScript']),
     new Project('LOGIN & SIGNUP', 'This is a simple register, which allows you to create an user and sign in with it, also allows you to change your password in case you forgot it.', 'login-signup.jpg', './projects/login', ['HTML5', 'PHP','JavaScript','MySQL']),
     new Project('PAYROLL', 'A payroll where you can add, edit and delete employes, alsho has a search bar and pagination. The discounts are based on DR discounts.', 'nomina.png', './projects/nomina', ['HTML5', 'PHP','Bootstrap','MySQL'])
 ]

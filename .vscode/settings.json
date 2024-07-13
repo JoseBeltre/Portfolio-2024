@@ -3,7 +3,7 @@
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "line",
     "editor.cursorSurroundingLines": 0,
-    "workbench.activityBar.location": "side",
+    "workbench.activityBar.location": "default",
     "workbench.colorCustomizations": {
 
     },
